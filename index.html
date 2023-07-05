@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <title>Gerador de Senha</title>
+  </head>
+  <body>
+    <div class="card-container"></div>
+    <header>
+      <h1>GERADOR DE SENHA</h1>
+    </header>
+    <main>
+      <div class="password">
+        <input type="text" disabled id="passwordInput" />
+        <i class="" id="btnCopy"></i>
+      </div>
+      <div class="rangeInput">
+        <input type="range" min="6" max="16" value="8" id="sizePassword" />
+        <span class="numberRange">8</span>
+      </div>
+
+      <label for="uppercase">
+        Letras maiúsculas
+        <input type="checkbox" name="uppercase" id="boxUppercase" />
+      </label>
+
+      <label for="lowercase">
+        Letras minúsculas
+        <input type="checkbox" name="lowercase" id="boxLowercase" />
+      </label>
+
+      <label for="numbers">
+        Números
+        <input type="checkbox" name="numbers" id="boxNumbers" />
+      </label>
+
+      <label for="symbols">
+        Símbolos
+        <input type="checkbox" name="symbols" id="boxSymbols" />
+      </label>
+      <button id="createPassword">
+        Criar senha
+      </button>
+    </main>
+  </body>
+</html>
